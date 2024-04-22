@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Título de la página</title>
+   </head>
+   <body>
+      <!-- Contenido del cuerpo del documento HTML -->
+      <header id="header">
+         <!-- Cabecera del documento -->
+         <h1>Template en HTML5. ¿Puede esto destronar librerias como React?</h1>
+      </header>
+      <nav>
+         <a href="#img1">Imagen 1</a>
+         <a href="#img2">Imagen 2</a>
+         <a href="#img3">Imagen 3</a>
+         <a href="#img4">Imagen 4</a>
+      </nav>
+      <section>
+         <!-- Sección de contenido principal -->
+         En el siguiente articulo se explica que es y como utilizar la etiqueta &lt;template&gt; y las posibilidades que esta brinda
+         <br>
+         <img id="img1" src="../image1.jpg" alt="Imagen N°1" />
+         <br>
+      </section>
+      <article>
+         <!-- Artículo o contenido independiente -->
+         La etiqueta &lt;template&gt; es utilizada para guardar contenido html y luego reutilizarlo multiples veces en nuestra aplicacion, de manera similar a como hacen motores de templating como handlebars y hbs o como funcionan los componentes en librerias mas avanzadas como react.
+         <br>
+         <img id="img2" src="./image2.jpg" alt="Imagen N°2" />
+         <br>
+         Para utilizar la etiqueta, primero deberemos generar el codigo html que se desea componetizar encerrado entre la etiquetea &lt;template&gt;&lt;/template&gt;. Esto generara el codigo html del componente, pero todavia no sera visible para el usuario.
+         <br>
+         Para poder hacer el componente visible al usuario, debemos hacer uso de javascript. Primero debermos generar un wrapper en nuestro html en donde insertar nuestra template como hijo, y luego utilizar un codigo javascript parecido al siguiente.
+         <br>
+         <pre>
+&lt;script&gt;
+   let myArr = ["Audi", "BMW", "Ford", "Honda", "Jaguar", "Nissan"];
+   let temp, item, a, i;
+   temp = document.getElementsByTagName("template")[0];
+   item = temp.content.querySelector("div");
+   for (i = 0; i &lt; myArr.length; i++) {
+      a = document.importNode(item, true);
+      a.textContent += myArr[i];
+      document.body.appendChild(a);
+   }
+&lt;/script&gt;
+         </pre>
+         En el codigo de arriba, vemos como utilizando javascript podemos tomar un template y injectarlo en nuestro html (en este caso en le body) multiples veces cambiando o no los valores del mismo.
+         <br>
+         <img id="img3" src="./Assets/image3.jpg" alt="Imagen N°3" />
+         <br>
+
+      </article>
+      <aside>
+         <!-- Contenido relacionado o complementario al contenido principal -->
+         <img id="img4" src="./Assets/extras/image4.jpg" alt="Imagen N°4">
+      </aside>
+      <footer>
+         <!-- Pie de página -->
+         <a href="#header">Volver al inicio</a>
+      </footer>
+   </body>
+</html>
