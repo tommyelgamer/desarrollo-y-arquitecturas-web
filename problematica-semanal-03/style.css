@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body > main {
+  padding-inline: 6rem;
+}
+
+.datos-personales-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: start;
+  align-items: center;
+
+  padding: 24px;
+
+  gap: 24px;
+}
+
+.datos-personales-wrapper > img {
+  border-radius: 100%;
+  width: 12rem;
+  height: 12rem;
+}
+
+.datos-personales {
+  display: flex;
+  flex-direction: column;
+}
+
+.datos-personales .nombre {
+  font-size: 4rem;
+  line-height: 0;
+  margin-block: 42px;
+  color: black;
+}
+
+.datos-personales p {
+  font-size: small;
+  color: gray;
+  margin-block: 0px;
+}
+
+.formacion-academica > main {
+  padding-inline: 2rem;
+}
+
+.formacion-academica section {
+  margin-block: 1rem;
+}
+
+.formacion-academica section h2 {
+  font-size: large;
+  margin-block: 0;
+}
+
+.formacion-academica section h3 {
+  font-size: medium;
+  color: gray;
+  margin-block: 0;
+}
+
+.experiencia-profesional > main {
+  padding-inline: 2rem;
+}
+
+.experiencia-profesional section {
+  margin-block: 1rem;
+}
+
+.experiencia-profesional section header h2 {
+  font-size: large;
+  margin-block: 0;
+}
+
+.experiencia-profesional section header h3 {
+  font-size: medium;
+  color: gray;
+  margin-block: 0;
+}
+
+.idiomas > main {
+  padding-inline: 2rem;
+}
+
+.idiomas table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.idiomas table th,td {
+  text-align: center;
+  padding: 4px;
+}
+
+.informatica > main {
+  padding-inline: 2rem;
+}
+
+.informatica table,th,td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.informatica table th,td {
+  text-align: center;
+  padding: 4px;
+}
+
+.sobre-mi > main {
+  padding-inline: 2rem;
+}
+
+.gustos-header {
+  font-size: larger;
+}
