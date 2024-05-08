@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  height: 15%;
+  background-image: url(./img/banner.jpg);
+}
+
+header > h1 {
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+
+  height: 70%;
+}
+
+aside {
+  height: 100%;
+  padding: 1rem;
+}
+
+section {
+  height: 100%;
+  padding: 1rem;
+}
+
+footer {
+  height: 15%;
+}
+
+ul > li > span:first-of-type {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.title {
+  display: inline;
+  font-size: x-large;
+  background-color: lightgray;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.text-xl {
+  font-size: x-large;
+}
+
+.background-lightgray {
+  background-color: lightgray;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.underline-error {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.color-lightblue {
+  color: lightblue;
+}
+
+.background-neongreen {
+  background-color: #00ff00;
+}
+
+.background-aqua {
+  background-color: aqua;
+}
+
+.background-yellow {
+  background-color: yellow;
+}
+
+.color-brown {
+  color: brown;
+}
+
+.color-orange {
+  color: #c55a11;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
