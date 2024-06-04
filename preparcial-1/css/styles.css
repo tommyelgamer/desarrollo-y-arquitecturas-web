@@ -1,0 +1,176 @@
+:root {
+  --custom-yellow: #fddd5d
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #2f3438;
+
+  display: grid;
+  grid-template:
+    "header header header" min-content
+    "aside main main"
+    "footer footer footer" min-content
+    / min-content;
+}
+
+header {
+  grid-area: header;
+  background-image: url("../img/marmol.png");
+
+  padding: 2rem 4rem;
+  border-bottom: 16px solid var(--custom-yellow);
+}
+
+.header-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  width: 100%;
+  border-block: 4px solid var(--custom-yellow);
+
+  padding-block: .5rem;
+}
+
+.header-information > p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.header-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+}
+
+h2.school-name {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.main-title {
+  font-size: 10rem;
+  width: 66.666%;
+  text-align: center;
+}
+
+.header-information p {
+  text-transform: uppercase;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #00c2ca;
+  min-width: min-content  ;
+
+  width: 40%;
+  max-width: 450px;
+}
+
+aside div {
+  padding: 2rem 4rem;
+}
+
+aside > a {
+  text-decoration: none;
+}
+
+aside div > p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #2f3438;
+  text-align: justify;
+}
+
+.aside-article {
+  border-top: 2px solid var(--custom-yellow);
+}
+
+.aside-article h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.content-table {
+  border-top: 2px solid var(--custom-yellow);
+  color: white;
+}
+
+.content-table h2 {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.content-table ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.content-table ul li {
+  padding-block: .15rem;
+}
+
+aside > div.aside-title > p {
+  font-size: 1.5rem;
+}
+
+main {
+  grid-area: main;
+  padding: 4rem 2rem;
+}
+
+main > article img {
+  width: 100%;
+}
+
+article .article-text {
+  margin-block: 2rem;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+article .article-text > h2 {
+  font-size: 4rem;
+}
+
+article .call-to-action {
+  width: 100%;
+  position: relative;
+}
+
+article .call-to-action a {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+
+  padding: .5rem 1rem;
+
+  border: none;
+  background-color: var(--custom-yellow);
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  text-decoration: none;
+  color: black;
+}
+
+footer {
+  grid-area: footer;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding-inline: .75rem;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
